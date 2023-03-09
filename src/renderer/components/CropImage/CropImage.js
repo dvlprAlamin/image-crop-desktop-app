@@ -32,6 +32,12 @@ export default function CropImage() {
   const handleZoom = (_e, value) => {
     setZoom(value);
   };
+
+  const handleReset = () => {
+    setPreviewImage(null);
+    setZoom(1);
+    setRotate(0);
+  };
   const handleFileSelect = (event) => {
     const selectedFile = event.target.files[0];
     if (selectedFile) {
@@ -127,7 +133,7 @@ export default function CropImage() {
                 color: '#1e3c72',
               }}
               variant="contained"
-              onClick={() => setPreviewImage(null)}
+              onClick={handleReset}
             >
               <RestartAltIcon />
             </IconButton>
@@ -136,10 +142,12 @@ export default function CropImage() {
                 backgroundImage:
                   'linear-gradient(to top, #1e3c72 0%, #1e3c72 1%, #2a5298 100%)',
                 color: '#80D0C7',
+                cursor: crop.height ? 'pointer' : 'not-allowed',
               }}
               className="download-btn"
               variant="contained"
-              onClick={() => downloadImage()}
+              onClick={() => crop.height && downloadImage()}
+              title={!crop.height ? 'Select Crop Area First' : ''}
             >
               <SaveIcon />
             </IconButton>
