@@ -11,11 +11,11 @@
     object-fit: contain;
 }
 
-.button-group {
+/* .button-group {
     display: flex;
     gap: 15px;
     margin-top: 10px;
-}
+} */
 
 .canvas1 {
     display: none;

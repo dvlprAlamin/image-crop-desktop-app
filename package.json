@@ -1,35 +1,38 @@
 {
-  "description": "A foundation for scalable desktop apps",
+  "description": "Image Crop is a powerful and user-friendly image editing app that allows you to crop images with ease. With this app, you can quickly and easily crop any part of an image and adjust its size, rotation, and orientation as per your needs. Image Crop comes with a range of intuitive features that make the cropping process seamless. You can zoom in and out of the image to get a more detailed view of the section you want to crop, rotate the image to get the perfect angle, and flip the image horizontally or vertically. Whether you are a professional photographer or a casual user, Image Crop is the perfect tool to help you crop your images and achieve your desired output. Download Image Crop now and start cropping your images like a pro!",
   "keywords": [
     "electron",
-    "boilerplate",
     "react",
     "typescript",
     "ts",
     "sass",
     "webpack",
     "hot",
-    "reload"
+    "reload",
+    "crop",
+    "image",
+    "rotate",
+    "zoom"
   ],
-  "homepage": "https://github.com/electron-react-boilerplate/electron-react-boilerplate#readme",
+  "homepage": "https://github.com/dvlprAlamin/image-crop-desktop-app#readme",
   "bugs": {
-    "url": "https://github.com/electron-react-boilerplate/electron-react-boilerplate/issues"
+    "url": "https://github.com/dvlprAlamin/image-crop-desktop-app/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/electron-react-boilerplate/electron-react-boilerplate.git"
+    "url": "git+https://github.com/dvlprAlamin/image-crop-desktop-app.git"
   },
   "license": "MIT",
   "author": {
-    "name": "Electron React Boilerplate Maintainers",
-    "email": "electronreactboilerplate@gmail.com",
-    "url": "https://electron-react-boilerplate.js.org"
+    "name": "Alamin Howlader",
+    "email": "alaminhowladerofficial@gmail.com",
+    "url": "https://dvlpralamin.netlify.app/"
   },
   "contributors": [
     {
-      "name": "Amila Welihinda",
-      "email": "amilajack@gmail.com",
-      "url": "https://github.com/amilajack"
+      "name": "Alamin Howlader",
+      "email": "alaminhowladerofficial@gmail.com",
+      "url": "https://github.com/dvlpralamin"
     }
   ],
   "main": "./src/main/main.ts",
@@ -95,6 +98,10 @@
     }
   },
   "dependencies": {
+    "@emotion/react": "^11.10.6",
+    "@emotion/styled": "^11.10.6",
+    "@mui/icons-material": "^5.11.11",
+    "@mui/material": "^5.11.12",
     "electron-debug": "^3.2.0",
     "electron-log": "^4.4.8",
     "electron-updater": "^5.3.0",
@@ -172,7 +179,7 @@
     "webpack-merge": "^5.8.0"
   },
   "build": {
-    "productName": "ElectronReact",
+    "productName": "Crop Image",
     "appId": "org.erb.ElectronReact",
     "asar": true,
     "asarUnpack": "**\\*.{node,dll}",
